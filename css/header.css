@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background: var(--bg-color);
+    position: relative;
+    overflow: visible;
+    padding: .5rem;
+}
+
+@media screen and (min-width: 700px) {
+    .header__inner {
+        gap: 2rem;
+    }
+    .header .button {
+        margin-right: 0;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .header__logo-img {
+        max-width: 176px;
+    }
+    .header__inner {
+        padding: 2rem 0;
+    }
+}

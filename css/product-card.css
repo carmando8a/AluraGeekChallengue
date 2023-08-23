@@ -1,0 +1,16 @@
+.product-card {
+    max-width: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 5px 1px 5px 2px rgba(28, 29, 4, 0.5);
+    border-radius: 4px;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    .product-card {
+        max-width:220px
+    }
+}

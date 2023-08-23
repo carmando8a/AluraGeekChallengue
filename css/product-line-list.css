@@ -1,0 +1,17 @@
+.product-line__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    row-gap: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    .product-line__link {
+        font-size:var(--fs-400);
+    }
+
+    .product-line__list {
+        row-gap: 4rem;
+        grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    }
+}

@@ -1,0 +1,21 @@
+.product-line__link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    color: var(--azul-100, #2A7AE4);
+    font-weight: 700;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.product-line__link-svg {
+    max-width: 15px;
+    width: 24px;
+    height: 24px;
+}
+
+.product-line__link-p {
+    color: black;
+    font-size: 17px;
+}

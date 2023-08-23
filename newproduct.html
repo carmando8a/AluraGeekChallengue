@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="img/jpg" href="./img/sports_esports_black_24dp 1.svg"/>
+    <link href="./css/style.css" rel="stylesheet"/>
+    <link href="./css/normalize.css" rel="stylesheet"/>
+    <link href="./css/reset.css" rel="stylesheet"/>
+    <link href="./css/header.css" rel="stylesheet"/>
+    <link href="./css/header-logo.css" rel="stylesheet"/>
+    <link href="./css/header-buscar.css" rel="stylesheet"/>
+    <link href="./css/header-input.css" rel="stylesheet"/>
+    <link href="./css/header-lupa.css" rel="stylesheet"/>
+    <link href="./css/header-boton.css" rel="stylesheet"/>
+    <link href="./css/banner.css" rel="stylesheet"/>
+    <link href="./css/banner-slider.css" rel="stylesheet"/>
+    <link href="./css/banner-boton.css" rel="stylesheet"/>
+    <link href="./css/product-card-link.css" rel="stylesheet"/>
+    <link href="./css/product-line.css" rel="stylesheet"/>
+    <link href="./css/product-line-top.css" rel="stylesheet"/>
+    <link href="./css/product-line-title-heading.css" rel="stylesheet"/>
+    <link href="./css/product-line-link.css" rel="stylesheet"/>
+    <link href="./css/product-line-list.css" rel="stylesheet"/>
+    <link href="./css/product-card.css" rel="stylesheet"/>
+    <link href="./css/product-card-img-container.css" rel="stylesheet"/>
+    <link href="./css/product-card-img.css" rel="stylesheet"/>
+    <link href="./css/product-card-title.css" rel="stylesheet"/>
+    <link href="./css/product-card-price.css" rel="stylesheet"/>
+    <link href="./css/footer.css" rel="stylesheet"/>
+    <link href="./css/footer-form.css" rel="stylesheet"/>
+    <link href="./css/footer-contact.css" rel="stylesheet"/>
+    <link href="./css/login-acces.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <!-- Zona cabecera -->
+    <header class="header">
+      <div class="container header__inner">
+            <a href="./index.html" class="header__logo-link">
+            <img class="header__logo-img" src="./img/logo.svg" alt="logo">
+            </a>
+            <form data-search-form class="search search--push-right" active="false">
+            <input class="search__input" type="text" id="header-input" placeholder="¿Qué deseas buscar?">
+            <button class="search__img" type="submit" style="border: none; background: none;">
+             <img src="./img/lupa.svg" alt="lups search">
+            </button>
+            </form>
+            <button data-mobile-search-button class="search__mobile-button">
+              <img class="search__mobile-button-img" src="./img/lupa.svg"> 
+            </button>
+            <a href="#" class="header__boton-admin" id="loginLink">Menu Administrador</a>
+      </div>
+    </header>
+
+    <!-- Zona login -->
+
+    <main>
+      <section class="section bg-grey section--accent-padding">
+        <div class="container">
+            <form data-form class="form form--login">
+                <h3 class="form__newproduct">Agregar nuevo producto</h3>
+                <div class="input-container">
+                    Cargar imagen desde equipo
+                    <input class="input-container__input" type="file" id="files" name="files[]" />
+                    <br />
+                    <output id="list"></output>
+                  </div>
+                  <div class="input-container">
+                    <input class="input-container__input" type="url" id="url" placeholder="Url de imagen:">
+                  </div>
+                <div class="input-container">
+                  <input class="input-container__input" type="text" id="categoria" placeholder="Categoria" required>
+                </div>
+                <div class="input-container">
+                  <input class="input-container__input" type="text" id="nombre" placeholder="Nombre del producto" required>
+                  </div>
+                <div class="input-container">
+                    <input class="input-container__input" type="number" id="precio" placeholder="Precio del producto" required>
+                </div>
+                <div class="input-container">
+                    <textarea class="input-container__input" type="text" id="descripcion" placeholder="Descripcion del producto" required></textarea>
+                    </div>
+                <button data-form-button class="form__button--full-width button">
+                    Agregar producto
+                </button>
+            </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer bg-skyblue section">
+        <div class="footer__inner container">
+          <div class="footer__content">
+            <a href="#" class="hover-move">
+              <img src="./img/logo.svg" alt="logo">
+            </a>
+            <ul role="list" class="footer__links-list">
+              <li class="footer__links-list-item">
+                <a href="#">Quienes somos</a>
+              </li>
+              <li class="footer__links-list-item">
+                <a href="#">Política de privacidad</a>
+              </li>
+              <li class="footer__links-list-item">
+                <a href="#">Programa de fidelidad</a>
+              </li>
+              <li class="footer__links-list-item">
+                <a href="#">Nuestras Tiendas</a>
+              </li>
+              <li class="footer__links-list-item">
+                <a href="#">Quiero ser franquiciado</a>
+              </li>
+              <li class="footer__links-list-item">
+                <a href="#">Anúncie aquí</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__form section">
+            <form class="form form--footer">
+              <h3 class="form__title">Hable con nosotros</h3>
+              <div class="input-container">
+                 <input class="input-container__input" maxlength="40" type="text" id="username" placeholder="" required>
+                 <label class="input-container__label" for="username">Nombre</label>
+                 <div data-forinput="username" class="input-container__message hide">Campo requerido</div>
+              </div>
+              <div class="input-container">
+                 <textarea class="input-container__input" maxlength="120" name="message-area" id="message" placeholder="" required></textarea>
+                 <label class="input-container__label" for="message">Escribe tu mensaje</label>
+              </div>
+              <button class="form__button button">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+       </footer>
+       <div class="copy section bg-white">
+        <p class="copy__text container">
+          Desarrollado por
+           <a href="https://www.linkedin.com/in/carlos-armando-ochoa-lupercio-29515424/" target="_blank">Carlos 8a</a>
+           - 2023
+        </p>
+       </div>
+       
+       <script>
+        function archivo(evt) {
+        var files = evt.target.files; // FileList object
+       
+        //Obtenemos la imagen del campo "file". 
+      for (var i = 0, f; f = files[i]; i++) {         
+           //Solo admitimos imágenes.
+           if (!f.type.match('image.*')) {
+                continue;
+           }
+       
+           var reader = new FileReader();
+           
+           reader.onload = (function(theFile) {
+               return function(e) {
+               // Creamos la imagen.
+                      document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+               };
+           })(f);
+ 
+           reader.readAsDataURL(f);
+       }
+}
+             
+      document.getElementById('files').addEventListener('change', archivo, false);
+       </script>
+</body>
+</html>
